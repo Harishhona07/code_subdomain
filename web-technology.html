@@ -1,44 +1,35 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
-
-<Title>Web Technology | Code.HarishHona</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Technology | Code.HarishHona</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
 <link rel="icon" 
      type="image/png" 
-     href="images/logo.jpg">
-
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-/*Whole Body*/
-body{
-background-color:black;
-font-family: Quicksand, Sans-Serif;
-
-
+     href="/images/logo.jpg">
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+     font-family: Quicksand;
 }
 
-.header { 
-     padding: 10px;
-     font-size: 20px;
-     text-align: center;
-     background: black;
-     color: white;
-    }
-  ul {
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
+
+
 li {
   float: left;
 }
+
 li a {
-  display: block; 
+  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -46,106 +37,164 @@ li a {
 }
 li a:hover {
   background-color: #111;
-  border-radius: 10px;
-  transform: scale(1.05); 
 }
 #active{
     background-color:green;
-  border-radius: 10px;
- 
    }
+body {
 
-
-.bg{
-background-color:lightgrey;
-height:150px;
-padding:3px;
-}
-@media only screen and (max-width:800px){
-.bg{
- width:100%;
- font-size:25px;
-   }
+  padding: 8px;
+  background: #f1f1f1;
+  font-family: 'Quicksand', sans-serif;
 }
 
 
-.footer {
-  background-color:black;
+.header {
   padding: 20px;
+  font-size: 20px;
   text-align: center;
+  background: black;
+  color: white;
+ 
 }
-    /*Bottom Navigation*/
-#bottomnav{
-  padding: 10px;
-  word-spacing: 20px;
-  
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
 }
-#bottomnav a{
-  text-decoration: none;
-  color:dodgerblue;
-  
+
+
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: lightgrey;
+   padding: 20px;
+   margin-top: 20px;
+   font-weight:normal;
+   
+ 
 }
-#bottomnav a:hover{
-  text-decoration: underline;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-@media only screen and(max-width:800px){
-    .footer {
+
+/* Footer */
+.footer {
     background-color:black;
   padding: 20px;
   text-align: center;
-  width:100%;
-    }
-  #bottomnav{
-    font-size: 14px;
-   }
-
+@media screen and (max-width: 800px) {
+  .leftcolumn{   
+    width: 100%;
+    padding: 0;
   }
-.division-line{
-  background-color: white;
-  height:2px;
+ 
+ }
+ .para{
+     font-size:40px;
+ }
 }
-#text{
-  color:white;
-}
-#link{
+.continuebutton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
   text-decoration: none;
-  color:dodgerblue;
-}
-#link:hover{
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
-<!--Content-->
-<!--Navigation Bar HTML-->
-  <ul>
-  <li><a href="#">Explore</a></li>
-  <li><a href="#">C Programming</a></li>
-    <li><a class="active" href="\web-technology">Web Technology</a></li>
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  margin-left:9%;
+  width:80%;
   
-</Ul>
-<!--Content-->
-<div>
-  <script src="https://gist.github.com/Harishhona07/9d1ccf14339c01a9d715e277561ee57a.js"></script>
-  </div>
-<BR>
-<br>
-<Br>
+}
 
-<div class="division-line"></div>
-<!--Footer HTML-->
+
+
+.continuebutton0 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.continuebutton0:hover {
+  background-color: #555555;
+  color: white;
+}
+.credits{
+    background-color:lightgrey;
+    font-family:Lora, Serif;
+    font-size:3px;
+    width:100%;
+    padding:5px;
+    
+    
+  
+}
+#anchor{
+  text-decoration: none;
+}
+#navlogo{
+    position: absolute;
+    top: 8px;
+    right: 20px;
+   }
+  }
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="https://code.harishhona.com.np/">Explore</a></li>
+  <li><a href="\c-programming">C Programming</a></li>
+  <li><a class="active" href="\web-technology">Web Technology</a></li>
+  <li><img src="/images/logo.jpg" id="navlogo" height="50px" width="50px" style="padding:9px;"></li>
+</Ul>
+
+<div class="header">
+  <h2>Web Technology </h2>
+</div>
+  <font size="2"><p align="right">[Sorted by: Latest]</p></font>
+  
+<!--Content-->
+ <div class="card">
+      <center>
+ <h2>JavaScript Question & Solutions<br>Grade 12</h2>
+      <h5> 2<sup>nd</sup> February, 2023</h5>
+      <h5>By - <a href="https://facebook.com/harishhona07" target="_blank">Harish Hona</a></h5>
+      </center>
+<br>
+<!--Chapter 1-->
+<p>
+<strong><font size=4>1. HTML/JS code to take input from user using input tag and display values.</font></strong>
+</p>
+      <p>
+        <script src="https://gist.github.com/Harishhona07/9d1ccf14339c01a9d715e277561ee57a.js"></script>
+      </p>
+      <br>
+        <center>
+          <b>Explore more of my gists here:<br>
+           <a href="https://gist.github.com/Harishhona07" target="_blank">Harish Hona -  Gists</a></b>
+         </center>
+         <br><br>   
+ </div> <br>
+
+  <br>  
+    
+<!--Footer-->
 <div class="footer">
-  <b>
-<font color="grey" size=2>
-Error 404: Site under development<br>
-© 2022 Harish Hona<br>
-Email ✉️: harishhona07@gmail.com
-  </font>
-  </b>
-  <br><br>
+  <font color="grey" size=2>
+  <a href="web-technology" id="anchor">code.harishhona.com.np/web-technology</a><br>
+  Copyright © 2022 Harish Hona<br>
+  Email ✉️: contact@harishhona.com.np<br><br>
  
   <table align="center" width="130px">
   <tr>
@@ -154,21 +203,10 @@ Email ✉️: harishhona07@gmail.com
 <td><a href="https://www.twitter.com/harish_hona" target="_blank"><img src="https://i.ibb.co/R9gs8WP/twitter-256.png" height="30" width="30"></a></td>
 </tr>
 </table>
- <!--Borrom Navigation-->
- <p style="color:white;" id="line">⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺</p>
- <div id="bottomnav">
-  <b>
- <a href="#">Home</a>
- <a href="#">C-Programming</a>
-
   
-</b>
-</div><br><br>
-<img src="images/logo.jpg"
-    height="45px" width="45px">
   
 </div>
 
-</body>
-
 </html>
+
+ 
