@@ -1,0 +1,33 @@
+🌐harishhona.com.np
+<html>
+  <head>
+    <title>Input and Display</title> 
+  </head>
+  <body>
+    <div>
+    <h1 align="center">Enter your information:</h1>
+    <br><br>
+    <center>
+    <input type="text" placeholder="Enter your name" id="name"><br><br>
+        <input type="number" id="roll" placeholder="Enter your roll number"><br><br><br>
+        <button id="button" onclick="display()">Display</button>
+    </center>
+      </div>
+      <br><br>
+    <div class="line"></div>
+    <br>
+    <h1 align="center">Your information:</h1>
+
+    <p id="display" align="center"></p>
+
+    <script>
+    function display() {
+      var name=document.getElementById("name").value;
+      var roll=document.getElementById("roll").value;
+
+      document.getElementById("display").innerHTML="Name = "+name+"<br>Roll = "+roll;
+    }
+    </script>
+
+  </body>
+</html>
