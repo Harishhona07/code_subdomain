@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+        #name,#email {
+           padding: 10px;
+           height: 50px;
+           border-width: 2px;
+           display: flex;
+           width: 80%;
+           border-radius: 7px;
+           text-align: center;
+            }
+        #button {
+            width:20%;
+            padding: 3px;
+            height:30px;
+            
+        }   
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1>Enter Your Information</h1>
+       
+        <form action="success.html" onsubmit="return validate();">
+            Name : <input type="text" id="name" placeholder="Name"><br>
+            Email: <input type="email" id="email" placeholder="Email"><br><br>
+
+            <button type="submit" onclick="passValue()" id="button">Log In</button>
+
+        </form>
+    </center>
+
+
+    <script>
+        function validate() {
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;           
+            if(name=="" || email=="" || pass=="") {
+                alert("Required field not entered!");
+                return false;
+            }
+                    
+            else {
+                return true;
+            }
+        }
+        
+
+        function passValue() {
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            localStorage.setItem("namekey",name);
+            localStorage.setItem("emailkey",email);
+           
+        }
+        
+    </script>
+    </body>
+   
+</html>
