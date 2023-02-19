@@ -1,0 +1,23 @@
+<html>
+    <head>       
+        <title>Login Success!</title>
+        <style>
+          #output {
+            background-color:yellow;
+          }
+        </style>
+    </head>
+    <body>
+      <center>
+      <h2>Login Successful!</h2>
+      <p>Your Information:<br><span id="output"></span></p>
+    </center>
+      <script>
+        var name=localStorage.getItem("namekey");
+        var email=localStorage.getItem("emailkey");
+        document.getElementById("output").innerHTML="Name: "+name+"<br>Email: "+email;
+        
+      </script>
+    </body>
+          
+</html>
