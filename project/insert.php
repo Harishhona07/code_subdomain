@@ -1,4 +1,5 @@
 <?php
+if($_SERVER['REQUEST_METHOD']=='POST') {
 //Retrive Data from Form:
 $username=$_POST['username'];
 $password=$_POST['password'];
@@ -22,6 +23,7 @@ else {
         </a>
         ";
     }
+}
 function addImage() {
     $image=$_POST['image'];
     echo $image;
