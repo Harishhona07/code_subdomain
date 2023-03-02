@@ -1,8 +1,8 @@
 <?php
-if($_SERVER['REQUEST_METHOD']=='POST') {
+
 //Retrive Data from Form:
-$username=$_POST['username'];
-$password=$_POST['password'];
+$username=$_GET['username'];
+$password=$_GET['password'];
 //Database Connection:
 $conn =  new mysqli("http://sql12.freesqldatabase.com","sql12602327","Latn1xmUp8","sql12602327");
 
@@ -23,7 +23,7 @@ else {
         </a>
         ";
     }
-}
+
 function addImage() {
     $image=$_POST['image'];
     echo $image;
