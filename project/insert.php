@@ -3,7 +3,7 @@
 $username=$_POST['username'];
 $password=$_POST['password'];
 //Database Connection:
-$conn =  new mysqli("sql12.freesqldatabase.com","sql12602327","Latn1xmUp8","sql12602327");
+$conn =  new mysqli("http://sql12.freesqldatabase.com","sql12602327","Latn1xmUp8","sql12602327");
 
 if($conn->connect_errno) {
     die("Connection Unsuccessful");
