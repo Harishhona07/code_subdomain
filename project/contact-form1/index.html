@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://kit.fontawesome.com/4acbaa3563.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="form-containerMain">
+
+            <div class="form-container">
+                <div class="content">
+                    <div class="heading">
+                        <h1>Contact Me</h1>
+
+                    </div>
+                    <form action="">
+                        <div class="element">
+                            <label for="">Full Name <span id="placeholder1">&nbsp;| Enter Your Full Name</span></label> 
+                            <input autocomplete="off" id="name" onblur="hidePlaceholder1()" onfocus="showPlaceholder1()" type="text">
+                        </div>
+
+                        <div class="element">
+                            <label for="email">Email Address <span id="placeholder2">&nbsp;| Enter Your Email</span></label>
+                            <input autocomplete="off" id="email"  onblur="hidePlaceholder2()" onfocus="showPlaceholder2()" type="email">
+                        </div>
+
+                        <div class="element">
+                            <label for="">Subject <span id="placeholder3">&nbsp;| Enter Your Subject</span></label>
+                            <input autocomplete="off" id="subject"  onblur="hidePlaceholder3()" type="text" onfocus="showPlaceholder3()">
+                        </div>
+                        <div class="element">
+                            <label for="">Message <span id="placeholder4">&nbsp;| Enter Your Message</span></label>
+                            <textarea name="" id="message"  onblur="hidePlaceholder4()" onfocus="showPlaceholder4()" cols="30" rows="10"></textarea>
+                        </div>
+                      
+
+                        <div class="button-container">
+                            <div class="element">
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    
+
+
+                </div>
+            </div>
+            </div>
+<script src="script.js"></script>
+</body>
+
+</html>
